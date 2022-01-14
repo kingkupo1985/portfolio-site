@@ -5,7 +5,7 @@ from morsecode import MorseCode
 from datetime import date
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'SE4d3njGs7IlkHjS9nMwKaQ'
+app.config['SECRET_KEY'] = 'Something Secret'
 Bootstrap(app)
 
 current_year = date.today().year
