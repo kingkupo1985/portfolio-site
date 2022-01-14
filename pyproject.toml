@@ -1,0 +1,9 @@
+[tool]
+[tool.poetry]
+authors = ["David Kuhs <dave@clientclub.us>"]
+name = "root"
+version = "0.0.0"
+description="dave's personal portfolio"
+[tool.poetry.dependencies]
+flask = "==1.1.2"
+python = "^3.8"
