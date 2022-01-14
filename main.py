@@ -3,9 +3,10 @@ from flask_bootstrap import Bootstrap
 from forms import ContactForm, MorseCodeForm
 from morsecode import MorseCode
 from datetime import date
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'Something Secret'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 Bootstrap(app)
 
 current_year = date.today().year
